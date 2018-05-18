@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-zX-8BO">
+                                <rect key="frame" x="16" y="30" width="343" height="525"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-hO-qxM">
+                                <rect key="frame" x="16" y="587" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="1" id="QVQ-kV-T9v">
+                                        <connections>
+                                            <action selector="mostrarWeb1:" destination="BYZ-38-t0r" id="KjL-um-VDA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="2" id="AkF-n9-00H">
+                                        <connections>
+                                            <action selector="mostrarWeb2:" destination="BYZ-38-t0r" id="KNi-cx-9Nk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="3" id="m8p-EL-9Zp">
+                                        <connections>
+                                            <action selector="mostrarWeb3:" destination="BYZ-38-t0r" id="FHm-QD-B7j"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="4" id="ckv-x2-ZHi">
+                                        <connections>
+                                            <action selector="mostrarWeb4:" destination="BYZ-38-t0r" id="bzx-E4-4qo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="BzO-f3-YbP">
+                                        <color key="tintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ra0-3a-rfj"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="SQO-ia-y36"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="4v3-LG-uKO"/>
+                                    <barButtonItem title="Inicio" id="V6K-5I-ds8">
+                                        <connections>
+                                            <action selector="mostrarWebInicio:" destination="BYZ-38-t0r" id="16L-4I-u31"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cuatro" destination="ckv-x2-ZHi" id="hYQ-mQ-aqV"/>
+                        <outlet property="dos" destination="AkF-n9-00H" id="Q3d-GS-5FP"/>
+                        <outlet property="inicio" destination="V6K-5I-ds8" id="DJW-FW-kru"/>
+                        <outlet property="tres" destination="m8p-EL-9Zp" id="cCD-aW-Ok1"/>
+                        <outlet property="uno" destination="QVQ-kV-T9v" id="8iH-il-yqG"/>
+                        <outlet property="webWiew" destination="iEl-zX-8BO" id="np0-st-1Uz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
